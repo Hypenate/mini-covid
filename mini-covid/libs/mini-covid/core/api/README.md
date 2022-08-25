@@ -1,7 +1,2 @@
-# mini-covid-core-api
-
-This library was generated with [Nx](https://nx.dev).
-
-## Running unit tests
-
-Run `nx test mini-covid-core-api` to execute the unit tests.
+The command to generate the files
+`npx openapi-generator-cli generate -i mini-covid\libs\mini-covid\core\api\src\lib\api.json -g typescript --skip-validate-spec -o mini-covid\libs\mini-covid\core\api\src\lib\generated`
