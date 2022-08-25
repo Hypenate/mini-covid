@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/mini-covid/country/data/src",
+  "prefix": "mini-covid",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/mini-covid/country/data"],
+      "options": {
+        "jestConfig": "libs/mini-covid/country/data/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/mini-covid/country/data/**/*.ts",
+          "libs/mini-covid/country/data/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

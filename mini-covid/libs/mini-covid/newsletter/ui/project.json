@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/mini-covid/newsletter/ui/src",
+  "prefix": "mini-covid",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/mini-covid/newsletter/ui"],
+      "options": {
+        "jestConfig": "libs/mini-covid/newsletter/ui/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/mini-covid/newsletter/ui/**/*.ts",
+          "libs/mini-covid/newsletter/ui/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

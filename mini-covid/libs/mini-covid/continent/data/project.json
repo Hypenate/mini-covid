@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/mini-covid/continent/data/src",
+  "prefix": "mini-covid",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/mini-covid/continent/data"],
+      "options": {
+        "jestConfig": "libs/mini-covid/continent/data/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/mini-covid/continent/data/**/*.ts",
+          "libs/mini-covid/continent/data/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

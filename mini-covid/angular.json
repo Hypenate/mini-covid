@@ -3,6 +3,12 @@
   "version": 2,
   "projects": {
     "mini-covid": "apps/mini-covid",
-    "mini-covid-e2e": "apps/mini-covid-e2e"
+    "mini-covid-continent-data": "libs/mini-covid/continent/data",
+    "mini-covid-continent-ui": "libs/mini-covid/continent/ui",
+    "mini-covid-country-data": "libs/mini-covid/country/data",
+    "mini-covid-country-ui": "libs/mini-covid/country/ui",
+    "mini-covid-e2e": "apps/mini-covid-e2e",
+    "mini-covid-newsletter-data": "libs/mini-covid/newsletter/data",
+    "mini-covid-newsletter-ui": "libs/mini-covid/newsletter/ui"
   }
 }

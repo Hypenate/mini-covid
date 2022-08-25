@@ -14,7 +14,26 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@mini-covid/mini-covid/continent/data": [
+        "libs/mini-covid/continent/data/src/index.ts"
+      ],
+      "@mini-covid/mini-covid/continent/ui": [
+        "libs/mini-covid/continent/ui/src/index.ts"
+      ],
+      "@mini-covid/mini-covid/country/data": [
+        "libs/mini-covid/country/data/src/index.ts"
+      ],
+      "@mini-covid/mini-covid/country/ui": [
+        "libs/mini-covid/country/ui/src/index.ts"
+      ],
+      "@mini-covid/mini-covid/newsletter/data": [
+        "libs/mini-covid/newsletter/data/src/index.ts"
+      ],
+      "@mini-covid/mini-covid/newsletter/ui": [
+        "libs/mini-covid/newsletter/ui/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
