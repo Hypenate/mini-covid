@@ -21,6 +21,9 @@
       "@mini-covid/mini-covid/continent/ui": [
         "libs/mini-covid/continent/ui/src/index.ts"
       ],
+      "@mini-covid/mini-covid/core/api": [
+        "libs/mini-covid/core/api/src/index.ts"
+      ],
       "@mini-covid/mini-covid/country/data": [
         "libs/mini-covid/country/data/src/index.ts"
       ],
