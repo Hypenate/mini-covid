@@ -1,0 +1,6 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/mini-covid/core",
+  "prefix": "mini-covid",
+  "tags": []
+}
