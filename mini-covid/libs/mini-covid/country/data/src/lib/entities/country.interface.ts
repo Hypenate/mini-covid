@@ -1,9 +1,9 @@
-import { CovidCountryCountryInfo } from '../../../../../core/api/src/lib/generated';
+import { CountryInfo } from './country-info.interface';
 
 export interface Country {
   updated: number;
   name: string;
-  Info: CovidCountryCountryInfo;
+  Info: CountryInfo;
   cases: number;
   todayCases: number;
   deaths: number;
