@@ -1,11 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+import { routes } from './app.routes';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    RouterModule,
+    RouterModule.forRoot(routes, {
+      paramsInheritanceStrategy: 'always',
+      relativeLinkResolution: 'corrected',
+      errorHandler: console.error,
+    }),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

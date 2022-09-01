@@ -1,1 +1,2 @@
-export * from './lib/mini-covid-country-data.module';
+export * from './lib/application/country.facade';
+export * from './lib/entities';

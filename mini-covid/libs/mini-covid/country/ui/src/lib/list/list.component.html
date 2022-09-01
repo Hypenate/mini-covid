@@ -1,0 +1,17 @@
+<table
+  mat-table
+  matSort
+  matSortActive="name"
+  matSortDirection="asc"
+  matSortDisableClear
+>
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Name</th>
+    <td [routerLink]="[country.id]" mat-cell *matCellDef="let country">
+      {{ country.name }}
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="columns"></tr>
+  <tr mat-row *matRowDef="let row; columns: columns"></tr>
+</table>
