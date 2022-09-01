@@ -5,7 +5,9 @@
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/mini-covid/country/ui"],
+      "outputs": [
+        "coverage/libs/mini-covid/country/ui"
+      ],
       "options": {
         "jestConfig": "libs/mini-covid/country/ui/jest.config.ts",
         "passWithNoTests": true

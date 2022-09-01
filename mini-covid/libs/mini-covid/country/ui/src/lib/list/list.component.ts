@@ -10,5 +10,5 @@ import { Country } from '@mini-covid/mini-covid/country/data';
 })
 export class ListComponent {
   dataSource = new MatTableDataSource<Country>();
-  columns = ['name'];
+  columns = ['name', 'todayCases', 'todayRecovered', 'todayDeaths'];
 }
