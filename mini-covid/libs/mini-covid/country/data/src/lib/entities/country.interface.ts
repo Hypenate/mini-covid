@@ -3,7 +3,7 @@ import { CountryInfo } from './country-info.interface';
 export interface Country {
   updated: number;
   name: string;
-  Info: CountryInfo;
+  info: CountryInfo;
   cases: number;
   todayCases: number;
   deaths: number;

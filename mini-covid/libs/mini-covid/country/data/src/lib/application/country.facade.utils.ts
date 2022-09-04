@@ -21,7 +21,7 @@ export const mapCovidCountryToCountry = (
   deaths: covidCountry.deaths ?? 0,
   name: covidCountry.country ?? 'unknown',
   deathsPerOneMillion: covidCountry.deathsPerOneMillion ?? 0,
-  Info: mapCountryInfoToInfo(covidCountry.countryInfo),
+  info: mapCountryInfoToInfo(covidCountry.countryInfo),
   oneCasePerPeople: covidCountry.oneCasePerPeople ?? 0,
   oneDeathPerPeople: covidCountry.oneDeathPerPeople ?? 0,
   oneTestPerPeople: covidCountry.oneTestPerPeople ?? 0,
