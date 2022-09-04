@@ -1,3 +1,8 @@
+<mat-form-field>
+  <mat-label>Filter</mat-label>
+  <input matInput (keyup)="applyFilter($event)" placeholder="Filter" />
+</mat-form-field>
+
 <table
   style="width: 100%"
   mat-table
@@ -41,3 +46,6 @@
   <tr mat-header-row *matHeaderRowDef="columns"></tr>
   <tr mat-row *matRowDef="let row; columns: columns"></tr>
 </table>
+
+<mat-paginator [pageSizeOptions]="[5, 10]" [pageSize]="10" showFirstLastButtons>
+</mat-paginator>

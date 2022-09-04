@@ -6,11 +6,16 @@ import { MatTableModule } from '@angular/material/table';
 import { RouterModule } from '@angular/router';
 import { ListComponent } from './list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
 @NgModule({
   imports: [
     CommonModule,
     HttpClientModule,
     RouterModule,
+    MatInputModule,
+    MatFormFieldModule,
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
