@@ -13,6 +13,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Country } from '../entities/country.interface';
 import { mapCovidCountryToCountry } from './country.facade.utils';
 import { CountryApiService } from '../services/country.service';
+import { CountryDto } from '../services/country-dto.interface';
 
 @Injectable({ providedIn: 'root' })
 export class CountryFacade {
@@ -30,7 +31,7 @@ export class CountryFacade {
     distinctUntilChanged()
   );
 
-  selectedCountry$: Observable<Country | null> =
+  selectedCountry$: Observable<Country> =
     this.refreshSelectedCountrySubject.pipe(
       switchMap(() => this.countrySelectedId$),
       filter((countryId): countryId is string => !!countryId),
@@ -40,9 +41,10 @@ export class CountryFacade {
         this.router.navigate(['..'], { relativeTo: this.route });
         return of(null);
       }),
-      map((selectedCountry) =>
-        selectedCountry ? mapCovidCountryToCountry(selectedCountry) : null
+      filter(
+        (selectedCountry): selectedCountry is CountryDto => !!selectedCountry
       ),
+      map((selectedCountry) => mapCovidCountryToCountry(selectedCountry)),
       shareReplay({ refCount: false, bufferSize: 1 })
     );
 
@@ -51,4 +53,8 @@ export class CountryFacade {
     private router: Router,
     private route: ActivatedRoute
   ) {}
+
+  getCountry(iso2: string | null) {
+    this.countrySelectedIdSubject.next(iso2);
+  }
 }

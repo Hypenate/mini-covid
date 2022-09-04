@@ -5,6 +5,7 @@ import { ListComponent } from './list/list.component';
 import { CountryListModule } from './list/list.module';
 import { CountryFormModule } from './form/form.module';
 import { FormComponent } from './form/form.component';
+import { CountryResolver } from './form/country.resolver';
 
 export const miniCovidCountryUiRoutes: Route[] = [];
 
@@ -16,6 +17,9 @@ const routes: Routes = [
   {
     path: ':countryId',
     component: FormComponent,
+    resolve: {
+      CountryResolver,
+    },
   },
 ];
 @NgModule({
