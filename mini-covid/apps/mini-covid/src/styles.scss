@@ -3,9 +3,17 @@
 html,
 body {
   height: 100%;
-  background-color: black;
+  background-color: steelblue;
 }
 body {
-  margin: 0;
+  margin: 0 10px 0 10px;
   font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+.mat-table {
+  background-color: unset;
+}
+
+.mat-paginator {
+  background-color: unset;
 }

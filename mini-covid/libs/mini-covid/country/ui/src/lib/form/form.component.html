@@ -1,4 +1,40 @@
-<mat-form-field>
-  <mat-label>Name</mat-label>
-  <input matInput placeholder="Name" />
-</mat-form-field>
+<ng-container *ngIf="form$ | async as form">
+  <form [formGroup]="$any(form)" (keydown.enter)="$event.preventDefault()">
+    <div style="display: flex; flex-direction: column; padding-top: 10px">
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Name" formControlName="name" />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Today cases</mat-label>
+        <input
+          matInput
+          placeholder="Today cases"
+          formControlName="todayCases"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Today recovered</mat-label>
+        <input
+          matInput
+          placeholder="Today recovered"
+          formControlName="todayRecovered"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Today deaths</mat-label>
+        <input
+          matInput
+          placeholder="Today deaths"
+          formControlName="todayDeaths"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Population</mat-label>
+        <input matInput placeholder="Population" formControlName="population" />
+      </mat-form-field>
+    </div>
+  </form>
+</ng-container>
+
+<button mat-raised-button color="primary" [routerLink]="'..'">Back</button>
