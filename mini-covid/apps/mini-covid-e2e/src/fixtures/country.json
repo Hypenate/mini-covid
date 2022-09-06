@@ -1,0 +1,32 @@
+{
+  "updated": 1662487850935,
+  "country": "Belgium",
+  "countryInfo": {
+    "_id": 4,
+    "iso2": "BE",
+    "iso3": "BEL",
+    "lat": 33,
+    "long": 65,
+    "flag": "https://disease.sh/assets/img/flags/be.png"
+  },
+  "cases": 194614,
+  "todayCases": 170,
+  "deaths": 7783,
+  "todayDeaths": 0,
+  "recovered": 172547,
+  "todayRecovered": 114,
+  "active": 14284,
+  "critical": 1124,
+  "casesPerOneMillion": 4766,
+  "deathsPerOneMillion": 191,
+  "tests": 1076191,
+  "testsPerOneMillion": 26355,
+  "population": 40834375,
+  "continent": "Asia",
+  "oneCasePerPeople": 210,
+  "oneDeathPerPeople": 5247,
+  "oneTestPerPeople": 38,
+  "activePerOneMillion": 349.8,
+  "recoveredPerOneMillion": 4225.53,
+  "criticalPerOneMillion": 27.53
+}

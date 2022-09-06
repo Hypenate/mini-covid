@@ -3,7 +3,12 @@
     <div style="display: flex; flex-direction: column; padding-top: 10px">
       <mat-form-field>
         <mat-label>Name</mat-label>
-        <input matInput placeholder="Name" formControlName="name" />
+        <input
+          matInput
+          placeholder="Name"
+          formControlName="name"
+          qa-id="name"
+        />
       </mat-form-field>
       <mat-form-field>
         <mat-label>Today cases</mat-label>
@@ -11,6 +16,7 @@
           matInput
           placeholder="Today cases"
           formControlName="todayCases"
+          qa-id="todayCases"
         />
       </mat-form-field>
       <mat-form-field>
@@ -19,6 +25,7 @@
           matInput
           placeholder="Today recovered"
           formControlName="todayRecovered"
+          qa-id="todayRecovered"
         />
       </mat-form-field>
       <mat-form-field>
@@ -27,11 +34,17 @@
           matInput
           placeholder="Today deaths"
           formControlName="todayDeaths"
+          qa-id="todayDeaths"
         />
       </mat-form-field>
       <mat-form-field>
         <mat-label>Population</mat-label>
-        <input matInput placeholder="Population" formControlName="population" />
+        <input
+          matInput
+          placeholder="Population"
+          formControlName="population"
+          qa-id="population"
+        />
       </mat-form-field>
     </div>
   </form>
