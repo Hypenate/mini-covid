@@ -88,7 +88,7 @@ describe('Country Facade Service', () => {
     });
   });
 
-  it('should select and load the provided Tenant', () => {
+  it('should select and load the provided Country', () => {
     scheduler.run(({ expectObservable, cold }) => {
       // GIVEN
       const countryDto: CountryDto = {
