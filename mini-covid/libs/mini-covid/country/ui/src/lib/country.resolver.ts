@@ -10,7 +10,7 @@ export class CountryResolver implements Resolve<Country> {
   resolve(route: ActivatedRouteSnapshot): Observable<Country> {
     const countryId = route.paramMap.get('countryId');
 
-    this.countryFacade.getCountry(countryId);
+    this.countryFacade.selectCountry(countryId);
 
     return this.countryFacade.selectedCountry$.pipe(first());
   }

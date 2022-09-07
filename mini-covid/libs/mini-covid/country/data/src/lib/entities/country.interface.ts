@@ -12,16 +12,7 @@ export interface Country {
   todayRecovered: number;
   active: number;
   critical: number;
-  casesPerOneMillion: number;
-  deathsPerOneMillion: number;
   tests: number;
-  testsPerOneMillion: number;
   population: number;
   continent: number;
-  oneCasePerPeople: number;
-  oneDeathPerPeople: number;
-  oneTestPerPeople: number;
-  activePerOneMillion: number;
-  recoveredPerOneMillion: number;
-  criticalPerOneMillion: number;
 }

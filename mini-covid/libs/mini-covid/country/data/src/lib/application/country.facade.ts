@@ -36,6 +36,7 @@ export class CountryFacade {
       switchMap(() => this.countrySelectedId$),
       filter((countryId): countryId is string => !!countryId),
       switchMap((countryId) => this.covidService.getCountry(countryId)),
+      // For simplicity added here, should be moved outside the facade, since it should be agnostic.
       catchError(() => {
         // Reroute in case of an issue, a popup will be shown by the interceptor
         this.router.navigate(['..'], { relativeTo: this.route });
@@ -54,7 +55,7 @@ export class CountryFacade {
     private route: ActivatedRoute
   ) {}
 
-  getCountry(iso2: string | null) {
+  selectCountry(iso2: string | null) {
     this.countrySelectedIdSubject.next(iso2);
   }
 }
