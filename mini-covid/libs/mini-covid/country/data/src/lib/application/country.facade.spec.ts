@@ -5,7 +5,7 @@ import { of } from 'rxjs';
 import { TestScheduler } from 'rxjs/testing';
 import { Country } from '../entities';
 import { CountryDto } from '../services/country-dto.interface';
-import { CountryApiService } from '../services/country.service';
+import { CountryApiService } from '../services/country-api.service';
 import { CountryFacade } from './country.facade';
 
 describe('Country Facade Service', () => {

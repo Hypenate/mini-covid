@@ -12,7 +12,7 @@ import { BehaviorSubject, of } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Country } from '../entities/country.interface';
 import { mapCovidCountryToCountry } from './country.facade.utils';
-import { CountryApiService } from '../services/country.service';
+import { CountryApiService } from '../services/country-api.service';
 import { CountryDto } from '../services/country-dto.interface';
 
 @Injectable({ providedIn: 'root' })
