@@ -9,7 +9,5 @@
     "mini-covid-country-data": "libs/mini-covid/country/data",
     "mini-covid-country-ui": "libs/mini-covid/country/ui",
     "mini-covid-e2e": "apps/mini-covid-e2e",
-    "mini-covid-newsletter-data": "libs/mini-covid/newsletter/data",
-    "mini-covid-newsletter-ui": "libs/mini-covid/newsletter/ui"
   }
 }
